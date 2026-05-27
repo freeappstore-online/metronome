@@ -1,0 +1,24 @@
+{
+  "name": "freemetronomeapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @metronome/web dev",
+    "build": "pnpm --filter @metronome/web build",
+    "preview": "pnpm --filter @metronome/web preview",
+    "typecheck": "pnpm --filter @metronome/web exec tsc -b",
+    "test": "pnpm --filter @metronome/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/metronome.git"
+  }
+}
